@@ -446,6 +446,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: caralho (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -619,6 +627,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: caralho (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -676,6 +692,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: caralho
       objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -732,6 +756,18 @@ PrefabInstance:
     - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
       propertyPath: m_Name
       value: caralho (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4537074671010133940, guid: ead6025845a9abe42b5a1b97d8f579d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1026,11 +1062,11 @@ GameObject:
   - component: {fileID: 1850764133}
   - component: {fileID: 1850764132}
   - component: {fileID: 1850764136}
-  - component: {fileID: 1850764137}
   - component: {fileID: 1850764135}
+  - component: {fileID: 1850764137}
   m_Layer: 0
   m_Name: nave
-  m_TagString: Untagged
+  m_TagString: meteoro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1149,7 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::andardanave
   thrustForce: 10
-  animator: {fileID: 0}
+  animator: {fileID: 1850764137}
 --- !u!60 &1850764136
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1381,7 +1417,7 @@ SceneRoots:
   - {fileID: 1777347477}
   - {fileID: 1757446478}
   - {fileID: 1187199446}
-  - {fileID: 614440578}
   - {fileID: 853777052}
-  - {fileID: 821861743}
   - {fileID: 1714071130}
+  - {fileID: 614440578}
+  - {fileID: 821861743}

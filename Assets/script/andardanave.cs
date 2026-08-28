@@ -16,34 +16,27 @@ public class andardanave : MonoBehaviour
 
     private void naosei()
     {
-        if (Mouse.current.leftButton.isPressed)
+        if (Mouse.current.leftButton.isPressed && gameObject)
         {
-            animator.SetBool("isMoving", true);
+            animator.SetBool("IsMoving", true);
         }
-        else
+        else if (gameObject)
         {
-            animator.SetBool("isMoving", false);
+            animator.SetBool("IsMoving", false);
         }
     }
- 
+
     void Update()
     {
-     if (Mouse.current.leftButton.isPressed)
+        if (Mouse.current.leftButton.isPressed)
         {
             Vector3 MousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.value);
-            Vector2 direction = (MousePos - transform.position). normalized;
+            Vector2 direction = (MousePos - transform.position).normalized;
             transform.up = direction;
             rb.AddForce(direction * thrustForce);
+            animator.SetBool("IsMoving", true);
         }
-        naosei();
-    }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Colidiu com: " + collision.gameObject.tag);
-        if (collision.gameObject.CompareTag("meteoro"))
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
 }
