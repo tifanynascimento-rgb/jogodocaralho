@@ -14,18 +14,6 @@ public class andardanave : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void naosei()
-    {
-        if (Mouse.current.leftButton.isPressed && gameObject)
-        {
-            animator.SetBool("IsMoving", true);
-        }
-        else if (gameObject)
-        {
-            animator.SetBool("IsMoving", false);
-        }
-    }
-
     void Update()
     {
         if (Mouse.current.leftButton.isPressed)
@@ -35,8 +23,12 @@ public class andardanave : MonoBehaviour
             transform.up = direction;
             rb.AddForce(direction * thrustForce);
             animator.SetBool("IsMoving", true);
+
         }
-        
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
     }
 
 }

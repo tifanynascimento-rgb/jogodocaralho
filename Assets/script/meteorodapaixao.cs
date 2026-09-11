@@ -4,9 +4,9 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
     Rigidbody2D rb;
 
-    float minSpeed = 40f;
+    float minSpeed = 20f;
 
-    float maxSpeed = 90f;
+    float maxSpeed = 60f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,12 +26,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
        
     }
 
-    //    void OnCollisionEnter2D(Collision2D collision)
-    //    {
-    //        Debug.Log("Colidiu com: " + collision.gameObject.tag);
-    //        if (collision.gameObject.CompareTag("meteoro"))
-    //        {
-    //            Destroy(collision.gameObject);
-    //        }
-    //    }
+     void OnCollisionEnter2D(Collision2D collision)
+     {
+      Debug.Log("Colidiu com: " + collision.gameObject.tag);
+      if (collision.gameObject.CompareTag("meteoro"))
+      {
+       Destroy(collision.gameObject);
+      }
+     }
 }
