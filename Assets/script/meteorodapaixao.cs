@@ -10,7 +10,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        float randomSize = Random.Range(1f, 3f);
+        float randomSize = Random.Range(1f, 2f);
         transform.localScale = new Vector3(randomSize, randomSize, 1); 
         rb = GetComponent<Rigidbody2D>();
         float RandomSpeed = Random.Range(minSpeed, maxSpeed);

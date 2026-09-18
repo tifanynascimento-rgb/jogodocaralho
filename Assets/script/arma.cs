@@ -4,11 +4,12 @@ public class arma : MonoBehaviour
 {
     [SerializeField] private tiro projectilPrefab;
 
-    [SerializeField] private Transform firePoint;
-
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilPrefab, transform.position, transform.rotation);
+        }
     }
 }

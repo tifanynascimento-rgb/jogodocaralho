@@ -1,15 +1,11 @@
 using UnityEngine;
 
-public class tiro : MonoBehaviour
+public class barreira : MonoBehaviour
 {
-
-    [SerializeField] private float speed = 8;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        var rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(-transform.right * speed, ForceMode2D.Impulse);
-        transform.Rotate(0, 0, 90);
+
     }
 
     // Update is called once per frame
@@ -17,13 +13,12 @@ public class tiro : MonoBehaviour
     {
 
     }
-
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("tiro"))
+        Debug.Log("Colidiu com: " + collision.gameObject.tag);
+        if (collision.gameObject.CompareTag("parede"))
         {
             Destroy(collision.gameObject);
         }
     }
-
 }
