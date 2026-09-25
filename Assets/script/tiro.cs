@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class tiro : MonoBehaviour
 {
+    public int pontosParaDar;
 
     [SerializeField] private float speed = 8;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,7 +23,10 @@ public class tiro : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("tiro"))
         {
+            GameManager.instance.AumentarPontuacao(pontosParaDar);
             Destroy(collision.gameObject);
+            Destroy(gameObject);
+
         }
     }
 

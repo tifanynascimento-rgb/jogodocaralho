@@ -31,4 +31,14 @@ public class andardanave : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Colidiu com: " + collision.gameObject.tag);
+        if (collision.gameObject.CompareTag("meteoro"))
+        {
+            Destroy(collision.gameObject);
+        }
+
+    }
+
 }

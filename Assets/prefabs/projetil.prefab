@@ -185,4 +185,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563f9b1a3db675c469445c6547017a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::tiro
+  pontosParaDar: 1
   speed: 8
